@@ -1,0 +1,5 @@
+# Manim / Blender 渲染中间产物，可由脚本重新生成
+media/
+
+__pycache__/
+*.pyc

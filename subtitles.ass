@@ -1,0 +1,40 @@
+[Script Info]
+Title: 2025 New Gaokao II Q14 Subtitles
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1280
+PlayResY: 720
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,LXGW WenKai Medium,30,&H00F5FAFF,&H000000FF,&H00141414,&H80000000,-1,0,0,0,100,100,0,0,1,2.4,1.4,2,30,30,36,1
+Style: Highlight,LXGW WenKai Medium,32,&H002EE0FF,&H000000FF,&H000A0A0A,&H80000000,-1,0,0,0,100,100,0,0,1,2.8,1.6,2,30,30,36,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:04.23,Default,,0,0,0,,这是 2025 年新高考全国 II 卷第 14 题。
+Dialogue: 0,0:00:03.88,0:00:13.25,Default,,0,0,0,,底面半径 4cm、高 9cm 的封闭圆柱形容器内有两个等大铁球，\N求铁球半径的最大值。
+Dialogue: 0,0:00:12.90,0:00:20.33,Default,,0,0,0,,两个球到底怎么放，才能把半径撑到最大？\N我们直接在三维空间中做一次探索！
+Dialogue: 0,0:00:19.98,0:00:26.36,Default,,0,0,0,,首先，最容易想到的是：把两球水平并排挤在底面上。
+Dialogue: 0,0:00:26.01,0:00:32.48,Highlight,,0,0,0,,当两球直径之和等于底面直径 8cm 时，\N每个球的半径 r = 2 cm。
+Dialogue: 0,0:00:32.13,0:00:39.53,Default,,0,0,0,,但是你看！两球并排紧贴，整体在圆柱里还可以大幅上下晃荡！
+Dialogue: 0,0:00:39.18,0:00:44.67,Default,,0,0,0,,圆柱高足足有 9cm，上半截还空着整整 5cm！
+Dialogue: 0,0:00:44.32,0:00:49.23,Highlight,,0,0,0,,水平并排远远没有用足空间，铁球显然还能更大！
+Dialogue: 0,0:00:48.88,0:00:54.80,Default,,0,0,0,,既然上面空间大，我们把两球竖着串联叠放顶天立地！
+Dialogue: 0,0:00:54.45,0:01:01.88,Highlight,,0,0,0,,两球直径之和等于高 9cm，此时半径达到 2.25 cm！
+Dialogue: 0,0:01:01.53,0:01:07.37,Default,,0,0,0,,竖直方向顶死了，却在水平方向左右乱晃！
+Dialogue: 0,0:01:07.02,0:01:14.74,Highlight,,0,0,0,,底面直径 8cm，而球径仅 4.5cm，两侧留有 3.5cm 巨大缝隙！
+Dialogue: 0,0:01:14.39,0:01:20.50,Highlight,,0,0,0,,怎样才能把高和宽同时榨干？答案呼之欲出——斜着错开！
+Dialogue: 0,0:01:20.15,0:01:26.00,Default,,0,0,0,,一个球贴底靠左，另一个球顶天靠右，沿对角线彼此外切！
+Dialogue: 0,0:01:25.65,0:01:31.56,Default,,0,0,0,,看！随着它们斜向错开，铁球开始继续向外疯狂膨胀！
+Dialogue: 0,0:01:31.21,0:01:39.36,Highlight,,0,0,0,,下球踩底贴左壁，上球顶天贴右壁，两球对角彼此顶死相切！
+Dialogue: 0,0:01:39.01,0:01:45.70,Highlight,,0,0,0,,上下、左右、对角，三个维度自由度全部锁死，空间被彻底榨干！
+Dialogue: 0,0:01:45.35,0:01:49.64,Default,,0,0,0,,极限状态一旦确定，几何模型瞬间降维！
+Dialogue: 0,0:01:49.29,0:01:59.16,Default,,0,0,0,,纵剖面直角三角形：竖直高差 9-2r，水平跨度 8-2r，斜边 2r！
+Dialogue: 0,0:01:58.81,0:02:06.44,Highlight,,0,0,0,,空间勾股定理：(8 - 2r)² + (9 - 2r)² = (2r)²！
+Dialogue: 0,0:02:06.09,0:02:17.24,Highlight,,0,0,0,,化简得 (2r - 5)(2r - 29) = 0，解得最大半径 r = 2.5 cm！
+Dialogue: 0,0:02:16.89,0:02:24.00,Highlight,,0,0,0,,高差 4，底边 3，斜边 5，正是我们最熟悉的黄金勾三股四弦五！
+Dialogue: 0,0:02:23.65,0:02:33.63,Highlight,,0,0,0,,水平放太矮，竖直放太瘦，只有对角错开锁死自由度，才达完美的 2.5 cm！
+Dialogue: 0,0:02:33.28,0:02:41.07,Highlight,,0,0,0,,掌握空间几何的极限碰撞与降维投影，极速秒杀高考压轴题！

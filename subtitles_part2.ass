@@ -1,0 +1,46 @@
+[Script Info]
+Title: 2025 New Gaokao II Q14 Part 2 Mathematical Proof
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1280
+PlayResY: 720
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,LXGW WenKai Medium,28,&H00F5FAFF,&H000000FF,&H00141414,&H80000000,-1,0,0,0,100,100,0,0,1,2.4,1.4,2,30,30,36,1
+Style: Highlight,LXGW WenKai Medium,30,&H002EE0FF,&H000000FF,&H000A0A0A,&H80000000,-1,0,0,0,100,100,0,0,1,2.8,1.6,2,30,30,36,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.25,0:00:08.83,Default,,0,0,0,,刚才在三维动画里，我们通过错位外切卡死，\N算出了半径 r = 2.5 cm。
+Dialogue: 0,0:00:08.73,0:00:14.51,Default,,0,0,0,,但这只是直观对称摆法，凭什么它就是全局最大？
+Dialogue: 0,0:00:14.41,0:00:22.03,Default,,0,0,0,,万一存在某种极其刁钻的非对称姿态，\N能塞下 2.51 cm 的球呢？
+Dialogue: 0,0:00:21.93,0:00:28.57,Highlight,,0,0,0,,今天，我们请出数学核武器——不等式链，\N给出严格的数学证明！
+Dialogue: 0,0:00:28.47,0:00:33.93,Default,,0,0,0,,进行严格证明的第一步：规范建立空间直角坐标系！
+Dialogue: 0,0:00:33.83,0:00:42.36,Default,,0,0,0,,以底面圆心为原点 O，x 与 y 轴在底面垂直，\N中心轴为竖直向上的 z 轴。
+Dialogue: 0,0:00:42.26,0:00:50.77,Highlight,,0,0,0,,容器解析约束：x² + y² ≤ 16，且高度 0 ≤ z ≤ 9。
+Dialogue: 0,0:00:50.67,0:00:58.70,Default,,0,0,0,,设两球心为 O₁(x₁,y₁,z₁) 与 O₂(x₂,y₂,z₂)，\N底面投影点为 P₁ 与 P₂。
+Dialogue: 0,0:00:58.60,0:01:06.10,Highlight,,0,0,0,,水平跨度 Δρ，垂直高差 Δz，球心距 L。\N代数武器正式启动！
+Dialogue: 0,0:01:06.00,0:01:15.19,Default,,0,0,0,,首先考察水平维度：球心水平投影，\N距离侧壁必须至少为 r！
+Dialogue: 0,0:01:15.09,0:01:22.71,Default,,0,0,0,,两球心水平投影 P₁ 与 P₂，\N只能活动在半径 4 - r 的同心圆盘内！
+Dialogue: 0,0:01:22.61,0:01:29.94,Default,,0,0,0,,在半径 4 - r 的圆盘内，两点最大距离绝不可能超过直径！
+Dialogue: 0,0:01:29.84,0:01:36.60,Highlight,,0,0,0,,因此，水平跨度 Δρ 必然 ≤ 2(4 - r) = 8 - 2r！
+Dialogue: 0,0:01:36.50,0:01:43.31,Default,,0,0,0,,再看竖直方向：下球心最低为 r，上球心最高为 9 - r。
+Dialogue: 0,0:01:43.21,0:01:50.97,Default,,0,0,0,,竖直有效活动区间长度只有 9 - 2r，\N两端贴满时高差达到极限！
+Dialogue: 0,0:01:50.87,0:01:56.48,Highlight,,0,0,0,,所以，垂直高差 Δz 必然 ≤ 9 - 2r！
+Dialogue: 0,0:01:56.38,0:02:03.21,Default,,0,0,0,,圆柱外壳已给水平和竖直方向死死焊上了物理天花板！
+Dialogue: 0,0:02:03.11,0:02:06.94,Default,,0,0,0,,接下来，是见证数学奇迹的高光时刻！
+Dialogue: 0,0:02:06.84,0:02:15.59,Highlight,,0,0,0,,由空间距离公式：球心距 L² = 水平跨度 Δρ² + 垂直高差 Δz²！
+Dialogue: 0,0:02:15.49,0:02:24.38,Highlight,,0,0,0,,代入极值，得球心距 L² ≤ (8 - 2r)² + (9 - 2r)²！
+Dialogue: 0,0:02:24.28,0:02:31.45,Default,,0,0,0,,而两球互不侵入的硬性几何约束：球心距 L ≥ 2r！
+Dialogue: 0,0:02:31.35,0:02:41.66,Highlight,,0,0,0,,两头一夹，终极不等式链诞生：\N(2r)² ≤ L² ≤ (8 - 2r)² + (9 - 2r)²！
+Dialogue: 0,0:02:41.56,0:02:45.60,Default,,0,0,0,,展开化简这个关于 r 的一元二次不等式：
+Dialogue: 0,0:02:45.50,0:02:51.81,Highlight,,0,0,0,,移项整理得：4r² - 68r + 145 ≥ 0！
+Dialogue: 0,0:02:51.71,0:02:56.95,Highlight,,0,0,0,,因式分解：(2r - 5)(2r - 29) ≥ 0！
+Dialogue: 0,0:02:56.85,0:03:01.86,Highlight,,0,0,0,,解得 r ≤ 2.5 或 r ≥ 14.5！
+Dialogue: 0,0:03:01.76,0:03:08.18,Default,,0,0,0,,但在底面半径为 4 的圆柱内 r < 4，14.5 被彻底淘汰！
+Dialogue: 0,0:03:08.08,0:03:13.11,Highlight,,0,0,0,,剩下的唯一可能：r 必须 ≤ 2.5 cm！
+Dialogue: 0,0:03:13.01,0:03:21.59,Highlight,,0,0,0,,无论两球姿势如何刁钻，不等式链将半径死死锁定在 2.5 cm 内！
+Dialogue: 0,0:03:21.49,0:03:28.75,Highlight,,0,0,0,,几何直觉探索形态，代数定理锁定极值。\N这才是数学证明的极致浪漫！
